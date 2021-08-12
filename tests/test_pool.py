@@ -17,11 +17,11 @@ sys.path.insert(0, root_dir)
 
 from unittest import TestCase
 
-from nebula2.gclient.net import ConnectionPool
+from nebula2_fork.gclient.net import ConnectionPool
 
-from nebula2.Config import Config
+from nebula2_fork.Config import Config
 
-from nebula2.Exception import (
+from nebula2_fork.Exception import (
     NotValidConnectionException,
     InValidHostname,
     IOErrorException

@@ -15,22 +15,22 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 root_dir = os.path.join(current_dir, '..')
 sys.path.insert(0, root_dir)
 
-from nebula2.Config import Config
-from nebula2.common.ttypes import (
+from nebula2_fork.Config import Config
+from nebula2_fork.common.ttypes import (
     DateTime,
     Date,
     Time,
     ErrorCode
 )
 
-from nebula2.data.DataObject import (
+from nebula2_fork.data.DataObject import (
     DateTimeWrapper,
     DateWrapper,
     TimeWrapper,
     Null
 )
 
-from nebula2.gclient.net import ConnectionPool
+from nebula2_fork.gclient.net import ConnectionPool
 
 from unittest import TestCase
 

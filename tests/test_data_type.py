@@ -15,8 +15,8 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 root_dir = os.path.join(current_dir, '..')
 sys.path.insert(0, root_dir)
 
-from nebula2.Exception import InvalidKeyException
-from nebula2.common.ttypes import (
+from nebula2_fork.Exception import InvalidKeyException
+from nebula2_fork.common.ttypes import (
     Value,
     NullType,
     Time,
@@ -27,11 +27,11 @@ from nebula2.common.ttypes import (
     NMap,
     ErrorCode
 )
-from nebula2.common import ttypes
-from nebula2.graph import ttypes as graphTtype
+from nebula2_fork.common import ttypes
+from nebula2_fork.graph import ttypes as graphTtype
 from unittest import TestCase
-from nebula2.data.ResultSet import ResultSet
-from nebula2.data.DataObject import (
+from nebula2_fork.data.ResultSet import ResultSet
+from nebula2_fork.data.DataObject import (
     ValueWrapper,
     Node,
     Relationship,
